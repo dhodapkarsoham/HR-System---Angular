@@ -1,1 +1,7 @@
 <p>list works!</p>
+<ul *ngIf="employeeList.length">
+    <li *ngFor="let e of employeeList">
+    <b>{{e.first_name}}</b>
+    {{e.last_name}}
+    </li>
+</ul>
